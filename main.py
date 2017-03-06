@@ -198,7 +198,29 @@ class ListaSimple:
 class main:
 	def __init__(self):
 		return
-
+while True:
+	print("--MENU--")
+	print("1Llista Simple")
+	print("2 cola")
+	print("3 pila")	
+	print("4 Salir")
+	sele = (raw_input("Seleccion"))
+	if sele=="1":
+		while true:
+			print("--MENU--")
+			print("1 Agregar")
+			print("2 Borrar")
+			print("3 Buscar")
+			print("4 Graficar")
+			ope = (raw_input("Operacion"))
+				if ope == "1":
+				elif ope == "2":
+				elif ope == "3":
+				elif ope == "3":
+	elif sele == "2":
+	elif sele == "3":
+	elif sele == "4":
+		break
 #-------------------LISTA SIMPLE--------------------------------
 ver = ListaSimple()
 nod1 = Nodo("15")
