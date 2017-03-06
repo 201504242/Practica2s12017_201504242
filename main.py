@@ -198,6 +198,7 @@ class ListaSimple:
 class main:
 	def __init__(self):
 		return
+lista = ListaSimple()
 while True:
 	print("--MENU--")
 	print("1Llista Simple")
@@ -212,11 +213,19 @@ while True:
 			print("2 Borrar")
 			print("3 Buscar")
 			print("4 Graficar")
-			ope = (raw_input("Operacion"))
+			ope = (raw_input("Operacion: "))
 				if ope == "1":
+					valor = (raw_input("Valor: "))
+					lista.insertar(Nodo(valor))
 				elif ope == "2":
+					eli = (raw_input("Elminar: "))
+					lista.eliminar(Nodo(eli))
 				elif ope == "3":
-				elif ope == "3":
+					bus = (raw_input("Buscar Pabalabra: "))
+					lista.buscar(Nodo(bus))
+				elif ope == "4":
+					lista.dibujarLs(lista)
+
 	elif sele == "2":
 	elif sele == "3":
 	elif sele == "4":
